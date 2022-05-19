@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import Loader from "./components/Loader";
+import Header from "./components/Header";
+import PixabayImages from "./components/PixabayImages";
+import axios from "axios";
 
 function App() {
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    //const key = process.env.API_KEY;
+    axios
+      .get(
+        `https://pixabay.com/api/?key=27502177-68818dbb220af984603de0960&image_type=photo`
+      )
+      .then((res) => console.log(res.data));
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Loader />
+      <PixabayImages />
     </div>
   );
 }
