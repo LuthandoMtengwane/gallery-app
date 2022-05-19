@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/gallery-app/static/js/main.553e3aaf.js",
+    "static/js/787.7de71b9f.chunk.js": "/gallery-app/static/js/787.7de71b9f.chunk.js",
+    "index.html": "/gallery-app/index.html",
+    "main.553e3aaf.js.map": "/gallery-app/static/js/main.553e3aaf.js.map",
+    "787.7de71b9f.chunk.js.map": "/gallery-app/static/js/787.7de71b9f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.553e3aaf.js"
+  ]
+}
